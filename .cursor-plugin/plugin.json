@@ -1,0 +1,36 @@
+{
+  "name": "foxform",
+  "displayName": "FoxForm",
+  "version": "1.0.0",
+  "description": "Build, publish and read scored forms, quizzes and calculators. Answer options carry points into a score, the score decides which screen comes next and which result the person sees, and calc() expressions return a quote or an ROI figure inside the page. Published forms are served as static HTML from a CDN. 10 tools: create, update, publish and unpublish a form, list and read responses, export them, and retrieve drop-off per screen.",
+  "author": {
+    "name": "FoxForm",
+    "url": "https://foxform.app"
+  },
+  "homepage": "https://foxform.app",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "forms",
+    "form-builder",
+    "quiz",
+    "survey",
+    "lead-generation",
+    "scoring",
+    "conditional-logic",
+    "calculator",
+    "webhooks",
+    "no-code"
+  ],
+  "mcpServers": "./.cursor-plugin/mcp.json",
+  "variables": {
+    "type": "object",
+    "properties": {
+      "FOXFORM_API_KEY": {
+        "type": "string",
+        "title": "FoxForm API key",
+        "description": "Key starting with ff_live_, generated in the FoxForm dashboard under MCP & API. Listing the available tools works without it; running any tool requires it."
+      }
+    }
+  }
+}

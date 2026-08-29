@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "foxform": {
+      "type": "http",
+      "url": "https://mcp.foxform.app/mcp",
+      "headers": {
+        "x-api-key": "${FOXFORM_API_KEY}"
+      }
+    }
+  }
+}
