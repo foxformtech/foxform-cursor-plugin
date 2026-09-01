@@ -2,12 +2,17 @@
   "name": "foxform",
   "displayName": "FoxForm",
   "version": "1.0.0",
+  "minClientVersions": {
+    "cursor": "3.13.0"
+  },
   "description": "Build, publish and read scored forms, quizzes and calculators. Answer options carry points into a score, the score decides which screen comes next and which result the person sees, and calc() expressions return a quote or an ROI figure inside the page. Published forms are served as static HTML from a CDN. 10 tools: create, update, publish and unpublish a form, list and read responses, export them, and retrieve drop-off per screen.",
   "author": {
     "name": "FoxForm",
+    "email": "foxform@mamutetech.com",
     "url": "https://foxform.app"
   },
-  "homepage": "https://foxform.app",
+  "homepage": "https://foxform.app/llms-full.txt",
+  "repository": "https://github.com/foxformtech/foxform-cursor-plugin",
   "license": "MIT",
   "logo": "assets/logo.png",
   "keywords": [
@@ -22,9 +27,21 @@
     "webhooks",
     "no-code"
   ],
+  "category": "integrations",
+  "tags": [
+    "foxform",
+    "forms",
+    "quiz",
+    "mcp",
+    "scoring",
+    "leads"
+  ],
   "mcpServers": "./.cursor-plugin/mcp.json",
   "variables": {
     "type": "object",
+    "required": [
+      "FOXFORM_API_KEY"
+    ],
     "properties": {
       "FOXFORM_API_KEY": {
         "type": "string",
